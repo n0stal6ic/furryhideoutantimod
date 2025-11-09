@@ -68,8 +68,8 @@ def process_asset_file(path: Path, output_dir: Path):
             print(f"  wrote filtered text -> {out_txt.name}")
 
 def main():
-    input_dir = input("Enter the input directory path: ").strip('"').strip()
-    output_dir = input("Enter the output directory path: ").strip('"').strip()
+    input_dir = input("Enter the input (MonoBehaviour) directory path: ").strip('"').strip()
+    output_dir = input("Enter the output (Extracted) directory path: ").strip('"').strip()
 
     input_path = Path(input_dir)
     output_path = Path(output_dir)
